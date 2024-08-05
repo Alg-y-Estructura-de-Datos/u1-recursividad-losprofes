@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.17"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Plantilla_A1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Ej1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ej1-Debug-e473119f2fa1c8c8084d.json",
+					"name" : "Ej1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ej2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ej2-Debug-b773898a1b924cde650c.json",
+					"name" : "Ej2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ej3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ej3-Debug-1f7c8eaaf48895d49df9.json",
+					"name" : "Ej3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ej4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ej4-Debug-4125dc8b31c75d72e7af.json",
+					"name" : "Ej4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ej5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ej5-Debug-9caab3ec666b3a410f31.json",
+					"name" : "Ej5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ej6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ej6-Debug-c0338c934f2bccf63985.json",
+					"name" : "Ej6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ej7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ej7-Debug-5d81c79c901cb93414df.json",
+					"name" : "Ej7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ej8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ej8-Debug-e398743f0fee444d1ecc.json",
+					"name" : "Ej8",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/lover/Desktop/UCC/Prog 3/2024/u1-recursividad-losprofes/cmake-build-debug",
+		"source" : "C:/Users/lover/Desktop/UCC/Prog 3/2024/u1-recursividad-losprofes"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
