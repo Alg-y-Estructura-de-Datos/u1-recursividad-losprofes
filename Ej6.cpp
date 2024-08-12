@@ -12,7 +12,7 @@ Crear un programa que pida al usuario un número entero positivo "n". Luego impl
 using namespace std;
 
 // Función recursiva para contar dígitos pares en posiciones impares
-int contarParesEnPosicionesImpares(int n, int pos = 1) {
+int contarParesEnPosicionesImpares(int n, int pos ) {
     // Caso base: si n es 0, no hay más dígitos que revisar
     if (n == 0) {
         return 0;
@@ -21,20 +21,25 @@ int contarParesEnPosicionesImpares(int n, int pos = 1) {
     int digitoActual = n % 10;
     if (pos % 2 != 0 && digitoActual % 2 == 0) {
         // Incrementar el contador y realizar la llamada recursiva
-        return 1 + contarParesEnPosicionesImpares(n / 10, pos + 1);
+        return 1 + contarParesEnPosicionesImpares(n / 10, pos - 1);
     } else {
         // Realizar la llamada recursiva sin incrementar el contador
-        return contarParesEnPosicionesImpares(n / 10, pos + 1);
+        return contarParesEnPosicionesImpares(n / 10, pos - 1);
     }
 }
 
 int main() {
     int n;
+    int d;
+    cout << "Ingrese cantidad de dígitos: ";
+    cin >> d;
+
     cout << "Ingrese un numero entero positivo: ";
     cin >> n;
 
     // Contar dígitos pares en posiciones impares usando la función recursiva
-    int resultado = contarParesEnPosicionesImpares(n);
+    int resultado = contarParesEnPosicionesImpares(n,d);
+
     cout << "Cantidad de dígitos pares en posiciones impares: " << resultado << endl;
 
     return 0;

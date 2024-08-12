@@ -8,17 +8,19 @@ Implementar una función recursiva que determine la suma de los “n” primeros
 
 using namespace std;
 
-int sumaRecursiva(int n) {
+int sumaRecursiva(int n) { //n=3
 
     /*Caso Base*/
-    if (n == 1) {
+    if (n == 0) {
         cout << n; // Imprimir el primer número sin el signo "+"
-        return 1;
+        return 0;
 
     } else { //else opcional
         cout << n << " + ";
         /*Recursividad y Terminación*/
-        return n + sumaRecursiva(n - 1);
+        return n + sumaRecursiva(n - 1); //return 3 + 3=6
+
+
     }
 }
 

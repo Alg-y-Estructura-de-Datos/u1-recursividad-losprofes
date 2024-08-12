@@ -10,32 +10,34 @@ Implementar una función recursiva que dado un número entero lo muestre de form
 
 using namespace std;
 
-void mostrarInvertido(int numero, int& invertido) {
+void mostrarInvertido(int numero, int& invertido) { //n = 123 invertido = 0
 
     /*Condición Base*/
     if (numero == 0) {
         return;
     } else {
         /*Código necesario*/
-        invertido = invertido * 10 + numero % 10;
+        invertido = invertido * 10 + numero % 10;       //invertido = 0*10 + 123 % 10 = 0+3 = 3
+        //invertido = 3*10 + 12%10 = 30 + 2 = 32
+        // invertido = 32*10 + 1%10 = 320 + 1 = 321
         /*Recursividad y Terminación*/
-        mostrarInvertido(numero / 10, invertido);
+        mostrarInvertido(numero / 10, invertido); // return;
     }
 }
 
 int main() {
-    int numero = 10523;
-    cout << "Número original: " << numero << endl;
+    int numero = 123;
+    cout << "Numero original: " << numero << endl;
 
     if (numero < 0) {
         cout << "Error: Número negativo no permitido." << endl;
         return 1; // Salir del programa con error
     }
 
-    int invertido = 0;
-    mostrarInvertido(numero, invertido);
+    int resultado = 0;
+    mostrarInvertido(numero, resultado);
 
-    cout << "Número invertido: " << invertido << endl;
+    cout << "Numero invertido: " << resultado << endl;
     return 0;
 }
 

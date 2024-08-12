@@ -20,9 +20,12 @@ using namespace std;
         // Caso base: cualquier número elevado a la potencia 0 es 1
         if (exponente == 0) {
             return 1;
-        } else {
+        }
+        else {
             // Llamada recursiva: multiplica la base por la base elevada al exponente menos uno
-            return base * potenciaRecursiva(base, exponente - 1); //return 3 * 3
+            return base * potenciaRecursiva(base, exponente - 1); //return 3 * 3 * 1 = 9
+
+
         }
 
     }
@@ -30,8 +33,8 @@ using namespace std;
 
 int main() {
 
-    int base = 2;
-    int exponente = 5;
+    int base = 3;
+    int exponente = 2;
 
     // Imprimir la base y el exponente
     cout << base << " elevado a la potencia " << exponente << " es: ";
