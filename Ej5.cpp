@@ -43,21 +43,3 @@ int main() {
     return 0;
 }
 
-
-int potenciaIterativa(int base, int exponente) {
-    // Resultado inicial es 1 (base^0 = 1)
-    int resultado = 1;
-
-    // Si el exponente es negativo, la potencia no es definida para números enteros
-    if (exponente < 0) {
-        cout << "El exponente debe ser un número entero no negativo." << endl;
-        return -1; // Indicamos error con un valor negativo
-    }
-
-    // Iterar desde 1 hasta el exponente
-    for (int i = 0; i < exponente; ++i) {
-        resultado *= base;
-    }
-
-    return resultado;
-}
