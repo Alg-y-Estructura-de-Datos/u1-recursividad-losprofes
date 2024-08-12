@@ -13,19 +13,20 @@
 
 using namespace std;
 
-int potenciaRecursiva(int base, int exponente) {
+
 
 // Función recursiva para calcular la potencia
-    int potenciaRecursiva(int base, int exponente) {
+    int potenciaRecursiva(int base, int exponente) { //B = 3 A LA EXPO = 2
         // Caso base: cualquier número elevado a la potencia 0 es 1
         if (exponente == 0) {
             return 1;
         } else {
             // Llamada recursiva: multiplica la base por la base elevada al exponente menos uno
-            return base * potenciaRecursiva(base, exponente - 1);
+            return base * potenciaRecursiva(base, exponente - 1); //return 3 * 3
         }
+
     }
-}
+//}
 
 int main() {
 
