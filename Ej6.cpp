@@ -12,7 +12,9 @@ Crear un programa que pida al usuario un número entero positivo "n". Luego impl
 using namespace std;
 
 // Función recursiva para contar dígitos pares en posiciones impares
-int contarParesEnPosicionesImpares( unsigned int n,  int tamanionumero ) { //22005
+//Esta función se limita a números de longitud entera. Si n es mayor, la función contará erroneamente.
+//Pasar a long o long long para números más grande que int.
+int contarParesEnPosicionesImpares( unsigned int n,  int tamanionumero ) {
     // Caso base: si n es 0, no hay más dígitos que revisar
     if (n == 0) {
         return 0;
